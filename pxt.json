@@ -1,16 +1,17 @@
 {
     "name": "pxt-robotzooelements",
-    "version": "0.0.0",
-    "description": "",
+    "version": "0.1.0",
+    "description": "ロボット動物園 / robotZoo Elements",
+    "license": "MIT",
     "dependencies": {
         "core": "*",
-        "radio": "*",
-        "microphone": "*"
+        "microphone": "*",
+        "bluetooth": "*"
     },
     "files": [
         "README.md",
-        "main.blocks",
-        "main.ts"
+        "main.ts",
+        "samples.ts"
     ],
     "testFiles": [
         "test.ts"
@@ -19,5 +20,5 @@
     "supportedTargets": [
         "microbit"
     ],
-    "preferredEditor": "blocksprj"
+    "preferredEditor": "tsprj"
 }
