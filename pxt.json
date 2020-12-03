@@ -1,6 +1,6 @@
 {
     "name": "pxt-robotzooelements",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "description": "ロボット動物園 / robotZoo Elements",
     "license": "MIT",
     "dependencies": {

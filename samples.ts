@@ -19,7 +19,7 @@ namespace RobotZoo {
             // 200ミリ秒で、ふつうに みぎに まがる
             RobotZoo.turn(direction.right, presetSpeed.mid, 200);
         }
-        RobotZoo.keepStill(0);
+        RobotZoo.keepStillMS(0);
     }
 
     /**
@@ -42,7 +42,7 @@ namespace RobotZoo {
             pins.servoWritePin(servoRightPin, 80); //-10
             basic.pause(700);
         }
-        RobotZoo.keepStill(0);
+        RobotZoo.keepStillMS(0);
     }
     
 
@@ -60,7 +60,7 @@ namespace RobotZoo {
             // 300ミリ秒で、ふつうに まえに すすむ
             RobotZoo.goStraigt(presetSpeed.mid, 300);
             // 150ミリ秒間 じっとする
-            RobotZoo.keepStill(150);
+            RobotZoo.keepStillMS(150);
         }
     }
 
@@ -78,19 +78,19 @@ namespace RobotZoo {
             // 500ミリ秒で、ゆっくり まえに すすむ
             RobotZoo.goStraigt(presetSpeed.slow, 500);
             // 700ミリ秒間 じっとする
-            RobotZoo.keepStill(700);
+            RobotZoo.keepStillMS(700);
             // 500ミリ秒で、ゆっくり ひだりに ふりむく
             RobotZoo.lookBack(direction.left, presetSpeed.slow, 500);
             // 100ミリ秒間 じっとする
-            RobotZoo.keepStill(100);
+            RobotZoo.keepStillMS(100);
             // 700ミリ秒で、ふつうに まえに すすむ
             RobotZoo.goStraigt(presetSpeed.mid, 700);
             // 700ミリ秒間 じっとする
-            RobotZoo.keepStill(700);
+            RobotZoo.keepStillMS(700);
             // 800ミリ秒で、ふつうに みぎに ふりむく
             RobotZoo.lookBack(direction.right, presetSpeed.mid, 800);
             // 300ミリ秒間 じっとする
-            RobotZoo.keepStill(300);
+            RobotZoo.keepStillMS(300);
         }
     }
     
@@ -108,19 +108,19 @@ namespace RobotZoo {
             // 500ミリ秒で、ふつうに まえに すすむ
             RobotZoo.goStraigt(presetSpeed.mid, 500);
             // 400ミリ秒間 じっとする
-            RobotZoo.keepStill(400);
+            RobotZoo.keepStillMS(400);
             // 150ミリ秒で、ふつうに ひだりに ふりむく
             RobotZoo.lookBack(direction.left, presetSpeed.mid, 150);
             // 500ミリ秒間 じっとする
-            RobotZoo.keepStill(500);
+            RobotZoo.keepStillMS(500);
             // 300ミリ秒で、ふつうに みぎに ふりむく
             RobotZoo.lookBack(direction.right, presetSpeed.mid, 300);
             // 500ミリ秒間 じっとする
-            RobotZoo.keepStill(500);
+            RobotZoo.keepStillMS(500);
             // 150ミリ秒で、ふつうに ひだりに ふりむく
             RobotZoo.lookBack(direction.left, presetSpeed.mid, 150);
             // 300ミリ秒間 じっとする
-            RobotZoo.keepStill(300);
+            RobotZoo.keepStillMS(300);
         }
     }
 
@@ -136,6 +136,6 @@ namespace RobotZoo {
         // 1000ミリ秒で、はやく まえに すすむ
         RobotZoo.goStraigt(presetSpeed.fast, 1000);
         // 100ミリ秒間 じっとする
-        RobotZoo.keepStill(100);
+        RobotZoo.keepStillMS(100);
     }
 }

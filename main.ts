@@ -74,15 +74,32 @@ namespace RobotZoo {
     //% _duration.defl=500
     //% group="じっとする"
     //% color="#7bc700"
-    // block=""
+    //% block=""
     //% weight=550
-    export function keepStill(_duration: number): void {
+    export function keepStillMS(_duration: number): void {
         //サーボを設定
         pins.servoWritePin(servoLeftPin, 90);
         pins.servoWritePin(servoRightPin, 90);
         pins.analogWritePin(servoLeftPin, 0);
         pins.analogWritePin(servoRightPin, 0);
         basic.pause(_duration);
+    }
+
+    /**
+     * ロボットを500ms静止させます。
+     */
+    //% block="じっとする"
+    //% group="じっとする"
+    //% color="#7bc700"
+    // block=""
+    //% weight=550
+    export function keepStill(): void {
+        //サーボを設定
+        pins.servoWritePin(servoLeftPin, 90);
+        pins.servoWritePin(servoRightPin, 90);
+        pins.analogWritePin(servoLeftPin, 0);
+        pins.analogWritePin(servoRightPin, 0);
+        basic.pause(500);
     }
 
     /**
@@ -99,7 +116,7 @@ namespace RobotZoo {
         pins.servoWritePin(servoLeftPin, 90+_speed);
         pins.servoWritePin(servoRightPin, 90-_speed);
         basic.pause(_duration);
-        keepStill(0);
+        keepStillMS(0);
     }
 
     /**
@@ -116,7 +133,7 @@ namespace RobotZoo {
         pins.servoWritePin(servoLeftPin, 90-_speed);
         pins.servoWritePin(servoRightPin, 90+_speed);
         basic.pause(_duration);
-        keepStill(0);
+        keepStillMS(0);
     }
 
     /**
@@ -139,7 +156,7 @@ namespace RobotZoo {
             pins.servoWritePin(servoRightPin, 90-_speed);
         }
         basic.pause(_duration);
-        keepStill(0);
+        keepStillMS(0);
     }
 
     /**
@@ -161,7 +178,7 @@ namespace RobotZoo {
             pins.servoWritePin(servoRightPin, 90-_speed);
         }
         basic.pause(_duration);
-        keepStill(0);
+        keepStillMS(0);
     }
 
     /**
